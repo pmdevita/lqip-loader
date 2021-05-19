@@ -24,8 +24,9 @@ module.exports = function (contentBuffer) {
       if (data) {
         if (data[0]) {
           callback(null, data[0]);
+        } else {
+          callback(new Error("[lqip-loader] No data received from base64/palette promise"), null);
         }
-        callback(new Error("[lqip-loader] No data received from base64/palette promise"), null);
       } else {
         callback(new Error("[lqip-loader] No data received from base64/palette promise"), null);
       }
