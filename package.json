@@ -29,7 +29,7 @@
   "homepage": "https://github.com/zouhir/lqip-loader#readme",
   "dependencies": {
     "loader-utils": "^1.1.0",
-    "lqip": "^2.1.0"
+    "lqip": "github:pmdevita/lqip"
   },
   "peerDependencies": {
     "file-loader": "*"
