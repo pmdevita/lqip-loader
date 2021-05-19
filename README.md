@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/zouhir/lqip/master/_github/logo.png" width="508">
 </p>
 
-<h4 align="center">lqip-loader: low quality images placeholders for webpack</h4>
+<h4 align="center">lqip-loader: low quality images placeholders for Webpack AND it works for Webpack 5</h4>
 <p align="center">
   <a align="center" href="https://lqip-loader.firebaseapp.com/">demo</a>
 </p>
@@ -14,7 +14,7 @@
 </p>
 
 ```
-npm install --save-dev lqip-loader
+npm install --save-dev pmdevita/lqip-loader
 ```
 
 <br />

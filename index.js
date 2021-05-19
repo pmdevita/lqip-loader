@@ -10,13 +10,14 @@ module.exports = function (contentBuffer) {
   var config = loaderUtils.getOptions(this) || {};
 
   config.palette = "palette" in config ? config.palette : false;
+  config.size = "size" in config ? config.size : 10;
 
   // promise array in case users want both
   // base64 & color palettes generated
   // that means we have 2 promises to resolve
   var outputPromises = [];
-
-  outputPromises.push(lqip.convert(contentBuffer));
+  var data = {"buffer": contentBuffer, "size": config.size}
+  outputPromises.push(lqip.convert(data));
 
   // final step, resolving all the promises we got so far
   Promise.all(outputPromises)
